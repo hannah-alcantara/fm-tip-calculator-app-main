@@ -27,22 +27,38 @@
         <div class="column__left">
           <p class="label--top">Bill</p>
           <div class="input__container">
-            <img class="icon" src="images/icon-dollar.svg" alt="Dollar Sign" />
-            <span class="input">142.55</span>
+            <!-- <img class="icon" src="images/icon-dollar.svg" alt="Dollar Sign" /> -->
+            <!-- <span class="input">142.55</span> -->
+            <input
+              type="number"
+              id="billAmount"
+              step="0.01"
+              placeholder="0"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = '0'"
+              required
+            />
+            <!-- <span class="validity"></span> -->
           </div>
           <p class="label">Select Tip %</p>
           <div class="tip__container">
-            <div class="tip">5%</div>
-            <div class="tip">5%</div>
-            <div class="tip">5%</div>
-            <div class="tip">5%</div>
-            <div class="tip">5%</div>
-            <div class="tip">5%</div>
+            <button class="tip">5%</button>
+            <button class="tip">10%</button>
+            <button class="tip">15%</button>
+            <button class="tip">25%</button>
+            <button class="tip">50%</button>
+            <button class="tip">Custom</button>
           </div>
           <p class="label">Number of People</p>
           <div class="input__container">
-            <img class="icon" src="images/icon-person.svg" alt="Person Icon" />
-            <span class="input">5</span>
+            <input
+              type="number"
+              id="numPeople"
+              placeholder="0"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = '0'"
+              required
+            />
           </div>
         </div>
         <div class="column__right">
@@ -51,7 +67,7 @@
               >Tip Amount
               <p class="sublabel">/ person</p></span
             >
-            <div class="amount">$0.00</div>
+            <div class="amount" id="tipAmount">0.00</div>
           </div>
           <div class="amount__container u-margin-top">
             <span class="label--right"
@@ -60,37 +76,16 @@
             >
             <div class="amount">$0.00</div>
           </div>
-          <div class="button__container">
-            <a class="button-text" href="#">Reset</a>
-          </div>
+          <button class="button">RESET</button>
         </div>
       </div>
     </div>
-    <!-- Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset -->
-
     <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Hannah A</a>.
     </div> -->
+    <script src="script.js"></script>
   </body>
 </html>
