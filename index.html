@@ -47,7 +47,13 @@
             <button class="tip">15%</button>
             <button class="tip">25%</button>
             <button class="tip">50%</button>
-            <button class="tip">Custom</button>
+            <input
+              type="number"
+              id="custom"
+              placeholder="Custom"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Custom'"
+            />
           </div>
           <p class="label">Number of People</p>
           <div class="input__container">
@@ -67,16 +73,16 @@
               >Tip Amount
               <p class="sublabel">/ person</p></span
             >
-            <div class="amount" id="tipAmount">0.00</div>
+            <div class="amount" id="tipAmount">$0.00</div>
           </div>
           <div class="amount__container u-margin-top">
             <span class="label--right"
               >Total
               <p class="sublabel">/ person</p></span
             >
-            <div class="amount">$0.00</div>
+            <div class="amount" id="totalAmount">$0.00</div>
           </div>
-          <button class="button">RESET</button>
+          <button class="button" id="reset">RESET</button>
         </div>
       </div>
     </div>

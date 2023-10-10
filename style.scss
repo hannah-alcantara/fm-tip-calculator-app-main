@@ -133,6 +133,15 @@ input::-webkit-inner-spin-button {
   transition: 0.3s;
 }
 
+#custom {
+  background-color: $very-light-grayish-cyan;
+  text-align: center;
+}
+
+#custom:focus {
+  background-color: $light-grayish-cyan;
+}
+
 .label--right {
   display: block;
   color: $very-light-grayish-cyan;

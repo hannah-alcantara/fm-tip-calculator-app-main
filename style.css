@@ -128,6 +128,15 @@ input::-webkit-inner-spin-button {
   transition: 0.3s;
 }
 
+#custom {
+  background-color: hsl(189, 41%, 97%);
+  text-align: center;
+}
+
+#custom:focus {
+  background-color: hsl(185, 41%, 84%);
+}
+
 .label--right {
   display: block;
   color: hsl(189, 41%, 97%);
