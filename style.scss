@@ -174,12 +174,17 @@ input::-webkit-inner-spin-button {
   background-color: $strong-cyan;
 }
 
+.button:hover {
+  background-color: $very-light-grayish-cyan;
+  transition: 0.3s;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
   margin-bottom: 20px;
-  // position: absolute;
-  // bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 .attribution a {
   color: $very-dark-cyan;

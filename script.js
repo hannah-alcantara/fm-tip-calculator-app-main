@@ -24,6 +24,12 @@ customTipInput.addEventListener("input", function(){
     }
 })
 
+customTipInput.addEventListener("click", function(){
+    if(validatePeopleAmount()){
+        calculateTip(tipPercentage);
+    }
+})
+
 resetButton.addEventListener("click", function(){
     billAmountInput.value = "";
     numPeopleInput.value = "";
@@ -36,7 +42,7 @@ resetButton.addEventListener("click", function(){
 function validatePeopleAmount() {
     const peopleAmount = parseFloat(numPeopleInput.value);
     if (!(peopleAmount >= 0)) {
-        alert("Please enter a valid number of people.");
+        // alert("Please enter a valid number of people.");
         return false;
     }
     return true;
