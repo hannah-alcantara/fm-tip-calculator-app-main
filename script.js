@@ -70,5 +70,5 @@ function calculateTip(tipPercentage){
 //calculate: divide by # of people
 //show in tip Amount
 
-//Fix validating number of people before tip percent
+//Fix button clicked before adding number of people
 //Listen input changes
